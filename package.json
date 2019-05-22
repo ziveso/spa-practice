@@ -1,0 +1,18 @@
+{
+  "name": "spa-practice",
+  "version": "1.0.0",
+  "description": "just practice",
+  "main": "server/app.js",
+  "repository": "https://github.com/ziveso/spa-practice",
+  "scripts": {
+    "start": "cd server; node app.js",
+    "dev": "cd server; nodemon app.js"
+  },
+  "author": "thitiwat thongbor <thitiwat.thongbor@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.0",
+    "moment": "^2.24.0",
+    "twit": "^2.2.11"
+  }
+}
