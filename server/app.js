@@ -1,5 +1,6 @@
 require("dotenv").config({ path: "../.env" });
 
+console.log(process.env);
 const express = require("express");
 const db = require("./database");
 const { streaming } = require("./logic/Twitter");
@@ -7,7 +8,7 @@ const { streaming } = require("./logic/Twitter");
 const app = express();
 const PORT = 8080;
 const HOST = "0.0.0.0";
-// console.log(process.env);
+console.log(process.env);
 app.get("/", (req, res) => {
   res.send("SPA practice API");
 });
