@@ -1,3 +1,5 @@
+require("dotenv").config({ path: "../.env" });
+
 const express = require("express");
 const db = require("./database");
 const { streaming } = require("./logic/Twitter");
@@ -10,8 +12,9 @@ app.get("/", (req, res) => {
   res.send("SPA practice API");
 });
 
-app.get("/readDb", (req, res) => {
-  res.send(db.read());
+app.get("/readDb", async (req, res) => {
+  const jsonDb = await db.read();
+  res.send(jsonDb);
 });
 
 app.listen(PORT, HOST);

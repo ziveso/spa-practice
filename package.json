@@ -11,6 +11,7 @@
   "author": "thitiwat thongbor <thitiwat.thongbor@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "moment": "^2.24.0",
     "twit": "^2.2.11"

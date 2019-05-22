@@ -11,7 +11,7 @@ const write = async (key, value) => {
 
 const read = async () => {
   //   console.log(db);
-  const dbs = await fs.readFileSync(db);
+  const dbs = await fs.readFileSync(db, "utf-8");
   return JSON.parse(dbs);
 };
 
